@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -8,24 +8,24 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="JpZorg Care Home Health Services">
   <meta name="keywords" content="home healthcare, home care Amsterdam, home care Netherlands, elderly care, nursing at home, companionship care, respite care, personal care services">
-  <title>JpZorg Care — Certified Home Healthcare in Amsterdam, Netherlands</title>
+  <title>JpZorg Care</title>
   <meta name="description" content="JpZorg Care provides certified home healthcare, nursing, personal care, and companionship services for families in Amsterdam and the Netherlands. Book a free consultation today.">
-  <link rel="canonical" href="https://www.jpzorgcare.com/">
+  <link rel="canonical" href="https://www.jpzorgcare.nl/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="JpZorg Care">
-  <meta property="og:title" content="JpZorg Care — Certified Home Healthcare in Amsterdam, Netherlands">
+  <meta property="og:title" content="JpZorg Care. Certified Home Healthcare in Amsterdam, Netherlands">
   <meta property="og:description" content="Professional, dignified home care: personal care, nursing, companionship, and family respite. Certified caregivers, 24/7 support, no long-term contracts.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1200">
   <meta property="og:image:alt" content="Caregiver assisting an elderly person with home healthcare">
-  <meta property="og:url" content="https://www.jpzorgcare.com/">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:url" content="https://www.jpzorgcare.nl/">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="JpZorg Care — Certified Home Healthcare in Amsterdam, Netherlands">
+  <meta name="twitter:title" content="JpZorg Care. Certified Home Healthcare in Amsterdam, Netherlands">
   <meta name="twitter:description" content="Professional, dignified home care: personal care, nursing, companionship, and family respite. Book a free consultation today.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1200">
 
@@ -42,8 +42,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "JpZorg Care Home Health Services",
-    "url": "https://www.jpzorgcare.com/",
-    "logo": "https://www.jpzorgcare.com/logo.png",
+    "url": "https://www.jpzorgcare.nl/",
+    "logo": "https://www.jpzorgcare.nl/logo.png",
     "description": "Certified home healthcare agency providing personal care, nursing, companionship, and respite services.",
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -194,7 +194,7 @@
 
     ::selection { background: var(--primary-light); color: white; }
 
-    a:focus-visible, button:focus-visible, .care-type-card:focus-visible, .freq-toggle-btn:focus-visible {
+    a:focus-visible, button:focus-visible, .care-type-card:focus-visible {
       outline: 2px solid var(--primary-light);
       outline-offset: 3px;
       border-radius: 8px;
@@ -517,6 +517,59 @@
     .value-card h3 { font-size: 1.05rem; color: var(--secondary); margin-bottom: 10px; font-weight: 700; }
     .value-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
+    /* Why Choose Us */
+    .why-choose-section { padding: clamp(30px, 5vw, 50px) clamp(16px, 4vw, 20px) 0; max-width: 1400px; margin: 0 auto; }
+    .why-choose-inner {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      min-height: 620px;
+      box-shadow: var(--shadow-hover);
+    }
+    .why-choose-inner img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+    .why-choose-card {
+      position: relative; z-index: 2;
+      max-width: 540px;
+      margin: clamp(24px, 5vw, 60px);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      padding: clamp(28px, 4vw, 44px);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-hover);
+      color: white;
+    }
+    .why-choose-badge {
+      display: inline-block;
+      border: 1.5px dashed rgba(255, 255, 255, 0.4);
+      color: white;
+      font-weight: 800;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .why-choose-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      line-height: 1.25;
+      color: white;
+      margin-bottom: 24px;
+    }
+    .why-choose-title .highlight { color: #FDE68A; }
+    .why-choose-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+    .why-choose-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; line-height: 1.5; color: rgba(255, 255, 255, 0.92); }
+    .why-choose-list li i { color: var(--accent); font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .why-choose-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: white;
+      font-weight: 700; font-size: 0.9rem;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: var(--transition);
+    }
+    .why-choose-link:hover { color: #FDE68A; }
+
     /* Services */
     .services-section { padding: clamp(50px, 10vw, 100px) clamp(16px, 4vw, 20px); max-width: 1200px; margin: 0 auto; }
     .section-header { text-align: center; max-width: 600px; margin: 0 auto 60px; }
@@ -573,12 +626,11 @@
     }
 
     .care-type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .care-type-card-full { grid-column: 1 / -1; flex-direction: row; justify-content: center; gap: 14px; padding: 14px 12px; }
-    .care-type-card-full .care-type-icon { margin-bottom: 0; }
+    .care-type-card-full { grid-column: 1 / -1; padding: 16px 12px; }
     .care-type-card {
       position: relative;
-      display: flex; flex-direction: column; align-items: center; gap: 8px;
-      padding: 18px 12px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+      padding: 20px 14px;
       border: 2px solid var(--border-color);
       border-radius: var(--radius-md);
       background: var(--surface-solid);
@@ -587,12 +639,7 @@
       text-align: center;
       font-family: inherit; font-weight: 700; font-size: 0.85rem;
       color: var(--text);
-    }
-    .care-type-icon {
-      width: 40px; height: 40px; border-radius: 12px;
-      background: var(--primary-soft); color: var(--primary-light);
-      display: grid; place-items: center; font-size: 1.1rem;
-      transition: var(--transition);
+      min-height: 64px;
     }
     .care-type-check {
       position: absolute; top: 8px; right: 8px;
@@ -603,37 +650,7 @@
     }
     .care-type-card:hover { border-color: var(--primary-light); }
     .care-type-card.active { border-color: var(--primary-light); background: var(--primary-soft); color: var(--primary); }
-    .care-type-card.active .care-type-icon { background: var(--primary-light); color: white; }
     .care-type-card.active .care-type-check { opacity: 1; transform: scale(1); }
-
-    .freq-toggle {
-      position: relative;
-      display: grid; grid-template-columns: 1fr 1fr;
-      background: var(--primary-soft);
-      border-radius: 100px;
-      padding: 4px;
-    }
-    .freq-toggle-pill {
-      position: absolute; top: 4px; left: 4px;
-      width: calc(50% - 4px); height: calc(100% - 8px);
-      background: var(--surface-solid);
-      border-radius: 100px;
-      box-shadow: var(--shadow-soft);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 1;
-    }
-    .freq-toggle-pill.shift { transform: translateX(100%); }
-    .freq-toggle-btn {
-      position: relative; z-index: 2;
-      background: none; border: none;
-      padding: 13px 10px;
-      font-family: inherit; font-weight: 700; font-size: 0.82rem;
-      color: var(--text-muted);
-      cursor: pointer;
-      border-radius: 100px;
-      transition: var(--transition);
-    }
-    .freq-toggle-btn.active { color: var(--primary); }
 
     .selected-plan-banner {
       display: flex; align-items: center; gap: 16px;
@@ -870,6 +887,9 @@
     .footer-kvk-label { font-size: 0.78rem; color: #94A3B8; margin-bottom: 4px; }
     .footer-kvk-value { color: white; font-weight: 700; font-size: 0.95rem; }
     .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid #1E293B; text-align: center; color: #94A3B8; font-size: 0.85rem; }
+    .footer-credit { margin-top: 10px; font-size: 0.8rem; }
+    .footer-credit a { color: var(--primary-light); text-decoration: none; font-weight: 700; transition: var(--transition); }
+    .footer-credit a:hover { color: white; text-decoration: underline; }
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; text-align: center; padding-top: 120px; }
@@ -880,6 +900,8 @@
       .estimator-container { grid-template-columns: 1fr; }
       .location-grid { grid-template-columns: 1fr; }
       .location-map-frame { min-height: 280px; }
+      .why-choose-inner { min-height: auto; }
+      .why-choose-card { margin: 20px; max-width: none; }
       .faq-split { grid-template-columns: 1fr; }
       .faq-panel-right { min-height: 260px; order: -1; }
       .request-split { grid-template-columns: 1fr; }
@@ -900,8 +922,7 @@
       .logo { font-size: 1.05rem; gap: 8px; }
       .logo-icon { width: 32px; height: 32px; font-size: 0.85rem; }
       .nav-actions { gap: 6px; }
-      header .toggle-btn { width: 36px; height: 36px; padding: 0; justify-content: center; }
-      header .toggle-btn .lang-label-text { display: none; }
+      header .toggle-btn { width: 36px; height: 36px; padding: 0; justify-content: center; font-size: 0.75rem; }
       .btn-header { padding: 9px 14px; font-size: 0.8rem; gap: 6px; }
       .btn-header span { display: none; }
       .hamburger-btn { width: 36px; height: 36px; font-size: 0.9rem; }
@@ -922,9 +943,6 @@
 
       .interactive-box { padding: 24px 20px; }
       .care-type-grid { grid-template-columns: 1fr; }
-      .freq-toggle { grid-template-columns: 1fr; }
-      .freq-toggle-pill { display: none; }
-      .freq-toggle-btn.active { background: var(--surface-solid); box-shadow: var(--shadow-soft); }
 
       .service-card { padding: 28px 22px; }
       .value-card { padding: 22px 18px; }
@@ -952,7 +970,7 @@
         <i class="fa-solid fa-moon dark-icon"></i>
       </button>
       <button class="toggle-btn" onclick="toggleLanguage()" aria-label="Toggle language">
-        <i class="fa-solid fa-globe"></i> <span class="lang-label-text">NL</span>
+        <span class="lang-label-text">EN</span>
       </button>
       <a href="https://wa.me/31685702560?text=Hello!%20I%20would%20like%20to%20book%20a%20care%20consultation." target="_blank" class="btn-header" aria-label="Book Care via WhatsApp">
         <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_book">Book Care</span>
@@ -970,7 +988,7 @@
         <i class="fa-solid fa-moon dark-icon"></i> <span data-i18n="toggle_dark">Dark Mode</span>
       </button>
       <button class="toggle-btn" onclick="toggleLanguage()" aria-label="Toggle language">
-        <i class="fa-solid fa-globe"></i> <span class="lang-label-text">NL</span>
+        <span class="lang-label-text">EN</span>
       </button>
     </div>
     <a href="#about" data-i18n="nav_about" onclick="toggleMobileMenu()">About Us</a>
@@ -1010,8 +1028,8 @@
       <div class="hero-badge float-badge scroll-anim scroll-jump stagger-4">
         <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
         <div>
-          <div style="font-weight: 800; color: var(--secondary);" data-i18n="rating_text">4.9 / 5.0 Rating</div>
-          <div style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="rating_sub">From 1,200+ Families Supported</div>
+          <div style="font-weight: 800; color: var(--secondary);" data-i18n="rating_text">4/9 / 5.0 Rating</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="rating_sub">From 200+ Families Supported</div>
         </div>
       </div>
     </div>
@@ -1029,7 +1047,7 @@
     </div>
     <div class="trust-item scroll-anim scroll-fade-up stagger-3">
       <div class="icon"><i class="fa-solid fa-clock"></i></div>
-      <span data-i18n="trust_3">24/7 On-Call Nurse Line</span>
+      <span data-i18n="trust_3">24/7 On-Call Service Line</span>
     </div>
     <div class="trust-item scroll-anim scroll-fade-up stagger-4">
       <div class="icon"><i class="fa-solid fa-house-medical-flag"></i></div>
@@ -1058,7 +1076,7 @@
             <span class="label" data-i18n="stat_2">Client Support</span>
           </div>
           <div class="stat-card scroll-anim scroll-jump stagger-3">
-            <span class="number" data-count-to="1200" data-suffix="+">0+</span>
+            <span class="number" data-count-to="200" data-suffix="+">0+</span>
             <span class="label" data-i18n="stat_3">Happy Families</span>
           </div>
         </div>
@@ -1079,7 +1097,30 @@
       <div class="value-card scroll-anim scroll-fade-up stagger-3">
         <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
         <h3 data-i18n="pillar_values_title">Our Core Values</h3>
-        <p data-i18n="pillar_values_desc">Dignity, compassion, integrity, and excellence guide every visit, every plan, and every relationship we build.</p>
+        <p data-i18n="pillar_values_desc">Reliability, involvement, quality, and caring.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-section" id="why-choose">
+    <div class="why-choose-inner">
+      <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1400" alt="Caregiver walking with an elderly client outdoors">
+      <div class="why-choose-card scroll-anim scroll-slide-left">
+        <div class="why-choose-badge" data-i18n="why_badge">About JpZorg Care</div>
+        <h2 class="why-choose-title">
+          <span data-i18n="why_title_1">Why choose</span> <span class="highlight">JpZorg Care</span>
+        </h2>
+        <ul class="why-choose-list">
+          <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="why_1">We truly listen to what you need.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="why_2">Our caregivers remain familiar faces, with no changing teams.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="why_3">We provide care with warmth, not with haste.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="why_4">Experienced professionals with both medical and human knowledge.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="why_5">Transparent communication with family and informal caregivers.</span></li>
+        </ul>
+        <a href="tel:+31685702560" class="why-choose-link">
+          <i class="fa-solid fa-phone"></i> <span data-i18n="why_cta">Contact Us</span>
+        </a>
       </div>
     </div>
   </section>
@@ -1183,39 +1224,25 @@
             <label data-i18n="label_need">Primary Care Need</label>
             <div class="care-type-grid">
               <button class="care-type-card active" id="opt-guidance" onclick="selectOption(this, 'Guidance & Support')">
-                <div class="care-type-icon"><i class="fa-solid fa-compass"></i></div>
                 <span data-i18n="opt_guidance">Guidance & Support</span>
                 <i class="fa-solid fa-circle-check care-type-check"></i>
               </button>
               <button class="care-type-card" id="opt-personal-support" onclick="selectOption(this, 'Personal Support')">
-                <div class="care-type-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
                 <span data-i18n="opt_personal_support">Personal Support</span>
                 <i class="fa-solid fa-circle-check care-type-check"></i>
               </button>
               <button class="care-type-card" id="opt-complex" onclick="selectOption(this, 'Complex Behaviour Support')">
-                <div class="care-type-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
                 <span data-i18n="opt_complex">Complex Behaviour Support</span>
                 <i class="fa-solid fa-circle-check care-type-check"></i>
               </button>
               <button class="care-type-card" id="opt-daily" onclick="selectOption(this, 'Meaningful Daily Living')">
-                <div class="care-type-icon"><i class="fa-solid fa-calendar-day"></i></div>
                 <span data-i18n="opt_daily">Meaningful Daily Living</span>
                 <i class="fa-solid fa-circle-check care-type-check"></i>
               </button>
               <button class="care-type-card care-type-card-full" id="opt-tailored" onclick="selectOption(this, 'Tailored Care')">
-                <div class="care-type-icon"><i class="fa-solid fa-sliders"></i></div>
                 <span data-i18n="opt_tailored">Tailored Care</span>
                 <i class="fa-solid fa-circle-check care-type-check"></i>
               </button>
-            </div>
-          </div>
-
-          <div class="care-builder-step">
-            <label data-i18n="label_freq">Frequency Needed</label>
-            <div class="freq-toggle" id="freq-toggle">
-              <div class="freq-toggle-pill" id="freq-toggle-pill"></div>
-              <button class="freq-toggle-btn active" onclick="selectFreq(this, 'Part-Time Care', 0)" data-i18n="freq_pt">Part-Time Care</button>
-              <button class="freq-toggle-btn" onclick="selectFreq(this, 'Full-Time Care', 1)" data-i18n="freq_ft">Full-Time Care</button>
             </div>
           </div>
 
@@ -1223,7 +1250,7 @@
             <div class="selected-plan-icon"><i class="fa-solid fa-clipboard-check"></i></div>
             <div>
               <div class="selected-plan-label" data-i18n="est_summary_label">Your Selected Care</div>
-              <div class="selected-plan-value" id="summary-display">Guidance & Support · Part-Time Care</div>
+              <div class="selected-plan-value" id="summary-display">Guidance & Support</div>
             </div>
           </div>
 
@@ -1309,7 +1336,7 @@
             <span data-i18n="faq_2_q">Are your caregivers licensed and insured?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_2_a">Yes — every caregiver and nurse is background-checked, certified, and covered under our agency insurance.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_2_a">Yes  every caregiver and nurse is background-checked, certified, and covered under our agency insurance.</p></div>
         </div>
 
         <div class="faq-item scroll-anim scroll-fade-up stagger-3">
@@ -1317,7 +1344,7 @@
             <span data-i18n="faq_3_q">Can I change or cancel my care schedule?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_3_a">Absolutely. There are no long-term contracts — schedules can be adjusted or paused with a simple message to your care coordinator.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_3_a">Absolutely. There are no long-term contracts  schedules can be adjusted or paused with a simple message to your care coordinator.</p></div>
         </div>
 
         <div class="faq-item scroll-anim scroll-fade-up stagger-4">
@@ -1441,6 +1468,12 @@
 
     <div class="footer-bottom">
       &copy; 2026 JpZorg Care Home Health Services. All rights reserved.
+      <div class="footer-credit">
+        <span data-i18n="footer_credit_prefix">Site developed by</span>
+        <a href="https://wa.me/250795947617" target="_blank">RUKUNDO M.PRINCE</a>
+        &amp;
+        <a href="https://wa.me/250793741338" target="_blank">SINI SALU</a>
+      </div>
     </div>
   </footer>
 
@@ -1460,7 +1493,7 @@
     const wordsEN = ["Seniors", "Loved Ones", "Families", "Recovery"];
     const wordsNL = ["Senioren", "Geliefden", "Families", "Herstel"];
     let wordIndex = 0;
-    let currentLang = 'EN';
+    let currentLang = 'NL';
 
     function initKineticHeader() {
       const box = document.getElementById('kinetic-box');
@@ -1508,7 +1541,6 @@
 
     // Care Schedule Builder Logic (no pricing shown — every plan is quoted individually)
     let currentCareName = 'Guidance & Support';
-    let currentFreqLabel = 'Part-Time Care';
 
     function selectOption(btn, careName) {
       document.querySelectorAll('.care-type-card').forEach(b => b.classList.remove('active'));
@@ -1517,21 +1549,12 @@
       updateSummary();
     }
 
-    function selectFreq(btn, freqLabel, index) {
-      document.querySelectorAll('.freq-toggle-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFreqLabel = freqLabel;
-      const pill = document.getElementById('freq-toggle-pill');
-      pill.classList.toggle('shift', index === 1);
-      updateSummary();
-    }
-
     function updateSummary() {
       const display = document.getElementById('summary-display');
-      display.textContent = `${currentCareName} · ${currentFreqLabel}`;
+      display.textContent = currentCareName;
 
       const whatsappBtn = document.getElementById('calc-booking-btn');
-      const text = encodeURIComponent(`Hello! I'm interested in ${currentCareName} — ${currentFreqLabel}. Could you send me a personalized quote?`);
+      const text = encodeURIComponent(`Hello! I'm interested in ${currentCareName}. Could you send me a personalized quote?`);
       whatsappBtn.href = `https://wa.me/31685702560?text=${text}`;
     }
 
@@ -1655,6 +1678,14 @@
         pillar_vision_desc: "A world where quality, dignified care is always within reach — delivered at home, on your family's own terms.",
         pillar_values_title: "Our Core Values",
         pillar_values_desc: "Dignity, compassion, integrity, and excellence guide every visit, every plan, and every relationship we build.",
+        why_badge: "About JpZorg Care",
+        why_title_1: "Why choose",
+        why_1: "We truly listen to what you need.",
+        why_2: "Our caregivers remain familiar faces, with no changing teams.",
+        why_3: "We provide care with warmth, not with haste.",
+        why_4: "Experienced professionals with both medical and human knowledge.",
+        why_5: "Transparent communication with family and informal caregivers.",
+        why_cta: "Contact Us",
         services_title: "Comprehensive Care Services",
         services_subtitle: "Tailored solutions ranging from daily household assistance to specialized medical care.",
         s1_title: "1. Guidance & Support", s1_desc: "Professional guidance and consistent support designed to help clients feel safe, confident, and supported in their daily lives.",
@@ -1671,7 +1702,6 @@
         est_desc: "Select the type and level of support your family needs. Every care plan is quoted individually by our team, so you always get a fair rate based on your exact situation.",
         est_check1: "No long-term commitments required", est_check2: "Fully insured and vetted medical staff", est_check3: "Transparent, personalized pricing — billed hourly",
         label_need: "Primary Care Need", opt_guidance: "Guidance & Support", opt_personal_support: "Personal Support", opt_complex: "Complex Behaviour Support", opt_daily: "Meaningful Daily Living", opt_tailored: "Tailored Care",
-        label_freq: "Frequency Needed", freq_pt: "Part-Time Care", freq_ft: "Full-Time Care",
         est_summary_label: "Your Selected Care", btn_book_schedule: "Get a Free Quote",
         request_badge: "Request Care",
         request_title_1: "Plan a",
@@ -1703,7 +1733,8 @@
         loc_directions: "Get Directions",
         footer_desc: "Providing professional, dignified, and loving health support directly inside the home.",
         footer_contact: "Contact",
-        footer_kvk_label: "Chamber of Commerce number"
+        footer_kvk_label: "Chamber of Commerce number",
+        footer_credit_prefix: "Site developed by"
       },
       NL: {
         nav_about: "Over Ons", nav_services: "Diensten", nav_plan: "Zorg Plannen", nav_request: "Zorg Aanvragen", nav_faq: "FAQ",
@@ -1730,6 +1761,14 @@
         pillar_vision_desc: "Een wereld waarin hoogwaardige, waardige zorg altijd binnen handbereik is — geleverd thuis, op de voorwaarden van uw familie.",
         pillar_values_title: "Onze Kernwaarden",
         pillar_values_desc: "Waardigheid, medeleven, integriteit en excellentie sturen elk bezoek, elk plan en elke relatie die we opbouwen.",
+        why_badge: "Over JpZorg Care",
+        why_title_1: "Waarom kiezen voor",
+        why_1: "Wij luisteren écht naar wat u nodig heeft.",
+        why_2: "Onze zorgverleners blijven vertrouwde gezichten, zonder wisselende teams.",
+        why_3: "Wij bieden zorg met warmte, niet met haast.",
+        why_4: "Ervaren professionals met zowel medische als menselijke kennis.",
+        why_5: "Transparante communicatie met familie en mantelzorgers.",
+        why_cta: "Neem Contact Op",
         services_title: "Onze Uitgebreide Diensten",
         services_subtitle: "Oplossingen variërend van dagelijkse huishoudelijke hulp tot gespecialiseerde medische zorg.",
         s1_title: "1. Begeleiding & Ondersteuning", s1_desc: "Professionele begeleiding en consistente ondersteuning, ontworpen om cliënten zich veilig, zelfverzekerd en gesteund te laten voelen in hun dagelijks leven.",
@@ -1746,7 +1785,6 @@
         est_desc: "Selecteer het gewenste type en niveau van ondersteuning. Elk zorgplan wordt persoonlijk door ons team beoordeeld, zodat u altijd een eerlijk tarief krijgt dat past bij uw situatie.",
         est_check1: "Geen langdurige contracten verplicht", est_check2: "Volledig verzekerd medisch personeel", est_check3: "Transparante, persoonlijke tarieven — per uur gefactureerd",
         label_need: "Type Zorgbehoefte", opt_guidance: "Begeleiding & Ondersteuning", opt_personal_support: "Persoonlijke Ondersteuning", opt_complex: "Ondersteuning bij Complex Gedrag", opt_daily: "Zinvolle Dagbesteding", opt_tailored: "Zorg op Maat",
-        label_freq: "Benodigde Frequentie", freq_pt: "Parttime Zorg", freq_ft: "Fulltime Zorg",
         est_summary_label: "Uw Gekozen Zorg", btn_book_schedule: "Vraag Een Offerte Aan",
         request_badge: "Zorg Aanvragen",
         request_title_1: "Plan een",
@@ -1778,12 +1816,12 @@
         loc_directions: "Route Plannen",
         footer_desc: "Het bieden van professionele, waardige en liefdevolle zorg aan huis.",
         footer_contact: "Contact",
-        footer_kvk_label: "KvK-nummer"
+        footer_kvk_label: "KvK-nummer",
+        footer_credit_prefix: "Website ontwikkeld door"
       }
     };
 
-    function toggleLanguage() {
-      currentLang = currentLang === 'EN' ? 'NL' : 'EN';
+    function applyLanguage() {
       const nextLabel = currentLang === 'EN' ? 'NL' : 'EN';
       document.querySelectorAll('.lang-label-text').forEach(el => el.textContent = nextLabel);
       document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -1796,12 +1834,17 @@
       });
       initKineticHeader();
       updateSummary();
+      document.documentElement.setAttribute('lang', currentLang.toLowerCase());
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'EN' ? 'NL' : 'EN';
+      applyLanguage();
     }
 
     // Scroll Observer for Entrance Animations
     document.addEventListener('DOMContentLoaded', () => {
-      initKineticHeader();
-      updateSummary();
+      applyLanguage(); // NL is the primary/default language
       animateCounters();
       initBackToTop();
       initServiceCardTaps();
