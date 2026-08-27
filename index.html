@@ -100,12 +100,12 @@
       {
         "@type": "Question",
         "name": "Are your caregivers licensed and insured?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — every caregiver and nurse is background-checked, certified, and covered under our agency insurance." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, every caregiver and nurse is background-checked, certified, and covered under our agency insurance." }
       },
       {
         "@type": "Question",
         "name": "Can I change or cancel my care schedule?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. There are no long-term contracts — schedules can be adjusted or paused with a simple message to your care coordinator." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. There are no long-term contracts. Schedules can be adjusted or paused with a simple message to your care coordinator." }
       },
       {
         "@type": "Question",
@@ -114,8 +114,8 @@
       },
       {
         "@type": "Question",
-        "name": "How do I pay for care?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We accept mobile money and bank transfer, billed weekly or monthly depending on your care plan." }
+        "name": "Do you offer night or weekend care?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer night and weekend care to fit your family's schedule." }
       }
     ]
   }
@@ -1092,7 +1092,7 @@
       <div class="value-card scroll-anim scroll-fade-up stagger-2">
         <div class="value-icon"><i class="fa-solid fa-eye"></i></div>
         <h3 data-i18n="pillar_vision_title">Our Vision</h3>
-        <p data-i18n="pillar_vision_desc">A world where quality, dignified care is always within reach — delivered at home, on your family's own terms.</p>
+        <p data-i18n="pillar_vision_desc">A world where quality, dignified care is always within reach, delivered at home, on your family's own terms.</p>
       </div>
       <div class="value-card scroll-anim scroll-fade-up stagger-3">
         <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
@@ -1215,7 +1215,7 @@
           <ul style="list-style: none; display: grid; gap: 12px;">
             <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> <span data-i18n="est_check1">No long-term commitments required</span></li>
             <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> <span data-i18n="est_check2">Fully insured and vetted medical staff</span></li>
-            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> <span data-i18n="est_check3">Transparent, personalized pricing — billed hourly</span></li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> <span data-i18n="est_check3">Transparent, personalized pricing</span></li>
           </ul>
         </div>
 
@@ -1336,7 +1336,7 @@
             <span data-i18n="faq_2_q">Are your caregivers licensed and insured?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_2_a">Yes  every caregiver and nurse is background-checked, certified, and covered under our agency insurance.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_2_a">Yes, every caregiver and nurse is background-checked, certified, and covered under our agency insurance.</p></div>
         </div>
 
         <div class="faq-item scroll-anim scroll-fade-up stagger-3">
@@ -1344,7 +1344,7 @@
             <span data-i18n="faq_3_q">Can I change or cancel my care schedule?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_3_a">Absolutely. There are no long-term contracts  schedules can be adjusted or paused with a simple message to your care coordinator.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_3_a">Absolutely. There are no long-term contracts. Schedules can be adjusted or paused with a simple message to your care coordinator.</p></div>
         </div>
 
         <div class="faq-item scroll-anim scroll-fade-up stagger-4">
@@ -1352,15 +1352,15 @@
             <span data-i18n="faq_4_q">What areas do you serve?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_4_a">We currently serve Amsterdam and the surrounding Netherlands, with plans to expand — reach out to check availability near you.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_4_a">We currently serve Amsterdam and the surrounding Netherlands, with plans to expand. Reach out to check availability near you.</p></div>
         </div>
 
         <div class="faq-item scroll-anim scroll-fade-up stagger-5">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span data-i18n="faq_5_q">How do I pay for care?</span>
+            <span data-i18n="faq_5_q">Do you offer night or weekend care?</span>
             <i class="fa-solid fa-plus"></i>
           </button>
-          <div class="faq-answer"><p data-i18n="faq_5_a">We accept mobile money and bank transfer, billed weekly or monthly depending on your care plan.</p></div>
+          <div class="faq-answer"><p data-i18n="faq_5_a">Yes, we offer night and weekend care to fit your family's schedule.</p></div>
         </div>
 
         <a href="https://wa.me/31685702560?text=Hello!%20I%20have%20a%20question%20that%20wasn't%20answered%20in%20the%20FAQ." target="_blank" class="faq-cta scroll-anim scroll-fade-up stagger-1">
@@ -1539,7 +1539,7 @@
       }
     });
 
-    // Care Schedule Builder Logic (no pricing shown — every plan is quoted individually)
+    // Care Schedule Builder Logic (no pricing shown, every plan is quoted individually)
     let currentCareName = 'Guidance & Support';
 
     function selectOption(btn, careName) {
@@ -1663,10 +1663,10 @@
         hero_cta: "Build Your Care Plan",
         hero_cta2: "See How It Works",
         rating_text: "4.9 / 5.0 Rating",
-        rating_sub: "From 1,200+ Families Supported",
+        rating_sub: "From 200+ Families Supported",
         trust_1: "Licensed & Insured",
         trust_2: "Background-Checked Staff",
-        trust_3: "24/7 On-Call Nurse Line",
+        trust_3: "24/7 On-Call Service Line",
         trust_4: "Free In-Home Assessment",
         about_title: "Who We Are",
         about_p1: "At <strong>JpZorg Care</strong>, we believe recovery and aging are best experienced in the comfort of home. Founded on principles of dignity and excellence, our agency connects families with certified caregivers, registered nurses, and dedicated companions.",
@@ -1675,9 +1675,9 @@
         pillar_mission_title: "Our Mission",
         pillar_mission_desc: "To deliver compassionate, professional home healthcare that helps every client live with dignity, comfort, and independence.",
         pillar_vision_title: "Our Vision",
-        pillar_vision_desc: "A world where quality, dignified care is always within reach — delivered at home, on your family's own terms.",
+        pillar_vision_desc: "A world where quality, dignified care is always within reach, delivered at home, on your family's own terms.",
         pillar_values_title: "Our Core Values",
-        pillar_values_desc: "Dignity, compassion, integrity, and excellence guide every visit, every plan, and every relationship we build.",
+        pillar_values_desc: "Reliability, involvement, quality, and caring guide every visit, every plan, and every relationship we build.",
         why_badge: "About JpZorg Care",
         why_title_1: "Why choose",
         why_1: "We truly listen to what you need.",
@@ -1700,7 +1700,7 @@
         s5_item1: "Services tailored to the individual situation", s5_item2: "Flexible support based on changing needs", s5_item3: "Respecting the client's independence, choices, and preferences",
         est_title: "Build Your Custom Care Schedule",
         est_desc: "Select the type and level of support your family needs. Every care plan is quoted individually by our team, so you always get a fair rate based on your exact situation.",
-        est_check1: "No long-term commitments required", est_check2: "Fully insured and vetted medical staff", est_check3: "Transparent, personalized pricing — billed hourly",
+        est_check1: "No long-term commitments required", est_check2: "Fully insured and vetted medical staff", est_check3: "Transparent, personalized pricing",
         label_need: "Primary Care Need", opt_guidance: "Guidance & Support", opt_personal_support: "Personal Support", opt_complex: "Complex Behaviour Support", opt_daily: "Meaningful Daily Living", opt_tailored: "Tailored Care",
         est_summary_label: "Your Selected Care", btn_book_schedule: "Get a Free Quote",
         request_badge: "Request Care",
@@ -1718,10 +1718,10 @@
         faq_title: "Frequently Asked Questions",
         faq_cta: "No Answer To Your Question?",
         faq_1_q: "How quickly can care start?", faq_1_a: "Most families begin care within 24–48 hours of their free consultation, and sooner for urgent post-hospital needs.",
-        faq_2_q: "Are your caregivers licensed and insured?", faq_2_a: "Yes — every caregiver and nurse is background-checked, certified, and covered under our agency insurance.",
-        faq_3_q: "Can I change or cancel my care schedule?", faq_3_a: "Absolutely. There are no long-term contracts — schedules can be adjusted or paused with a simple message to your care coordinator.",
-        faq_4_q: "What areas do you serve?", faq_4_a: "We currently serve Amsterdam and the surrounding Netherlands, with plans to expand — reach out to check availability near you.",
-        faq_5_q: "How do I pay for care?", faq_5_a: "We accept mobile money and bank transfer, billed weekly or monthly depending on your care plan.",
+        faq_2_q: "Are your caregivers licensed and insured?", faq_2_a: "Yes, every caregiver and nurse is background-checked, certified, and covered under our agency insurance.",
+        faq_3_q: "Can I change or cancel my care schedule?", faq_3_a: "Absolutely. There are no long-term contracts. Schedules can be adjusted or paused with a simple message to your care coordinator.",
+        faq_4_q: "What areas do you serve?", faq_4_a: "We currently serve Amsterdam and the surrounding Netherlands, with plans to expand. Reach out to check availability near you.",
+        faq_5_q: "Do you offer night or weekend care?", faq_5_a: "Yes, we offer night and weekend care to fit your family's schedule.",
         nav_location: "Visit Us",
         loc_title: "Visit Our Netherlands Office",
         loc_subtitle: "Drop by, call ahead, or find us on the map below.",
@@ -1746,10 +1746,10 @@
         hero_cta: "Stel Uw Zorgplan Samen",
         hero_cta2: "Bekijk Hoe Het Werkt",
         rating_text: "4.9 / 5.0 Beoordeling",
-        rating_sub: "Van 1.200+ Ondersteunde Families",
+        rating_sub: "Van 200+ Ondersteunde Families",
         trust_1: "Gelicentieerd & Verzekerd",
         trust_2: "Gescreend Personeel",
-        trust_3: "24/7 Bereikbare Verpleeglijn",
+        trust_3: "24/7 Bereikbare Servicelijn",
         trust_4: "Gratis Intake aan Huis",
         about_title: "Wie Wij Zijn",
         about_p1: "Bij <strong>JpZorg Care</strong> geloven we dat herstel en ouder worden het beste plaatsvinden in het comfort van uw eigen huis.",
@@ -1758,9 +1758,9 @@
         pillar_mission_title: "Onze Missie",
         pillar_mission_desc: "Het bieden van medelevende, professionele thuiszorg die elke cliënt helpt om waardig, comfortabel en zelfstandig te leven.",
         pillar_vision_title: "Onze Visie",
-        pillar_vision_desc: "Een wereld waarin hoogwaardige, waardige zorg altijd binnen handbereik is — geleverd thuis, op de voorwaarden van uw familie.",
+        pillar_vision_desc: "Een wereld waarin hoogwaardige, waardige zorg altijd binnen handbereik is, geleverd thuis, op de voorwaarden van uw familie.",
         pillar_values_title: "Onze Kernwaarden",
-        pillar_values_desc: "Waardigheid, medeleven, integriteit en excellentie sturen elk bezoek, elk plan en elke relatie die we opbouwen.",
+        pillar_values_desc: "Betrouwbaarheid, betrokkenheid, kwaliteit en zorgzaamheid sturen elk bezoek, elk plan en elke relatie die we opbouwen.",
         why_badge: "Over JpZorg Care",
         why_title_1: "Waarom kiezen voor",
         why_1: "Wij luisteren écht naar wat u nodig heeft.",
@@ -1783,7 +1783,7 @@
         s5_item1: "Diensten afgestemd op de individuele situatie", s5_item2: "Flexibele ondersteuning op basis van veranderende behoeften", s5_item3: "Respecteren van de onafhankelijkheid, keuzes en voorkeuren van de cliënt",
         est_title: "Stel Uw Zorgrooster Samen",
         est_desc: "Selecteer het gewenste type en niveau van ondersteuning. Elk zorgplan wordt persoonlijk door ons team beoordeeld, zodat u altijd een eerlijk tarief krijgt dat past bij uw situatie.",
-        est_check1: "Geen langdurige contracten verplicht", est_check2: "Volledig verzekerd medisch personeel", est_check3: "Transparante, persoonlijke tarieven — per uur gefactureerd",
+        est_check1: "Geen langdurige contracten verplicht", est_check2: "Volledig verzekerd medisch personeel", est_check3: "Transparante, persoonlijke tarieven",
         label_need: "Type Zorgbehoefte", opt_guidance: "Begeleiding & Ondersteuning", opt_personal_support: "Persoonlijke Ondersteuning", opt_complex: "Ondersteuning bij Complex Gedrag", opt_daily: "Zinvolle Dagbesteding", opt_tailored: "Zorg op Maat",
         est_summary_label: "Uw Gekozen Zorg", btn_book_schedule: "Vraag Een Offerte Aan",
         request_badge: "Zorg Aanvragen",
@@ -1801,10 +1801,10 @@
         faq_title: "Veelgestelde Vragen",
         faq_cta: "Geen Antwoord Op Uw Vraag?",
         faq_1_q: "Hoe snel kan de zorg starten?", faq_1_a: "De meeste families starten binnen 24–48 uur na de gratis kennismaking, sneller bij spoed na ziekenhuisontslag.",
-        faq_2_q: "Zijn uw zorgverleners gecertificeerd en verzekerd?", faq_2_a: "Ja — elke zorgverlener en verpleegkundige is gescreend, gecertificeerd en gedekt door onze bedrijfsverzekering.",
-        faq_3_q: "Kan ik mijn zorgrooster wijzigen of stopzetten?", faq_3_a: "Zeker. Er zijn geen langdurige contracten — roosters kunnen worden aangepast via een bericht aan uw zorgcoördinator.",
-        faq_4_q: "Welke gebieden bedient u?", faq_4_a: "Wij zijn momenteel actief in Amsterdam en omgeving, met uitbreidingsplannen — neem contact op om beschikbaarheid te checken.",
-        faq_5_q: "Hoe betaal ik voor de zorg?", faq_5_a: "Wij accepteren mobiel geld en bankoverschrijving, wekelijks of maandelijks gefactureerd afhankelijk van uw zorgplan.",
+        faq_2_q: "Zijn uw zorgverleners gecertificeerd en verzekerd?", faq_2_a: "Ja, elke zorgverlener en verpleegkundige is gescreend, gecertificeerd en gedekt door onze bedrijfsverzekering.",
+        faq_3_q: "Kan ik mijn zorgrooster wijzigen of stopzetten?", faq_3_a: "Zeker. Er zijn geen langdurige contracten. Roosters kunnen worden aangepast via een bericht aan uw zorgcoördinator.",
+        faq_4_q: "Welke gebieden bedient u?", faq_4_a: "Wij zijn momenteel actief in Amsterdam en omgeving, met uitbreidingsplannen. Neem contact op om beschikbaarheid te checken.",
+        faq_5_q: "Biedt u nacht of weekendzorg aan?", faq_5_a: "Ja, wij bieden nacht en weekendzorg om aan te sluiten bij het schema van uw familie.",
         nav_location: "Bezoek Ons",
         loc_title: "Bezoek Ons Kantoor in Nederland",
         loc_subtitle: "Kom langs, bel vooraf, of vind ons op de kaart hieronder.",
