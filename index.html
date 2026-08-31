@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="J.Pzorg">
   <meta property="og:title" content="J.Pzorg. Certified Home Healthcare in Amsterdam, Netherlands">
-  <meta property="og:description" content="Professional, dignified home care: personal care, companionship, and family respite. Certified caregivers, 24/7 support, no long-term contracts.">
+  <meta property="og:description" content="Professional, dignified home care: personal care, nursing, companionship, and family respite. Certified caregivers, 24/7 support, no long-term contracts.">
   <meta property="og:image" content="https://images.pexels.com/photos/37092473/pexels-photo-37092473.jpeg?auto=compress&cs=tinysrgb&w=1200">
   <meta property="og:image:alt" content="Elderly person and caregiver enjoying a peaceful afternoon in the park">
   <meta property="og:url" content="https://www.jpzorgnederland.nl/">
@@ -26,7 +26,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="J.Pzorg. Certified Home Healthcare in Amsterdam, Netherlands">
-  <meta name="twitter:description" content="Professional, dignified home care: personal care, companionship, and family respite. Book a free consultation today.">
+  <meta name="twitter:description" content="Professional, dignified home care: personal care, nursing, companionship, and family respite. Book a free consultation today.">
   <meta name="twitter:image" content="https://images.pexels.com/photos/37092473/pexels-photo-37092473.jpeg?auto=compress&cs=tinysrgb&w=1200">
 
   <meta name="mobile-web-app-capable" content="yes">
@@ -71,8 +71,8 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Strawinskylaan 1",
-      "postalCode": "1077 XX",
+      "streetAddress": "Hogehilweg 22",
+      "postalCode": "1101 CD",
       "addressLocality": "Amsterdam",
       "addressCountry": "NL"
     },
@@ -1387,7 +1387,7 @@
           <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
           <div>
             <div class="location-label" data-i18n="loc_address_label">Address</div>
-            <div class="location-value" data-i18n="loc_address">Strawinskylaan 1, 1077 XX Amsterdam Zuid, Netherlands</div>
+            <div class="location-value" data-i18n="loc_address">Hogehilweg 22, 1101 CD Amsterdam, Netherlands</div>
           </div>
         </div>
         <div class="location-item">
@@ -1404,13 +1404,13 @@
             <div class="location-value" data-i18n="loc_hours">Mon–Fri, 9:00–18:00 CET</div>
           </div>
         </div>
-        <a href="https://www.google.com/maps?q=Strawinskylaan+1,+1077+XX+Amsterdam+Zuid,+Netherlands" target="_blank" class="btn-secondary" style="margin-top: 8px;">
+        <a href="https://www.google.com/maps?q=Hogehilweg+22,+1101+CD+Amsterdam,+Netherlands" target="_blank" class="btn-secondary" style="margin-top: 8px;">
           <i class="fa-solid fa-diamond-turn-right"></i> <span data-i18n="loc_directions">Get Directions</span>
         </a>
       </div>
       <div class="location-map-frame scroll-anim scroll-slide-right stagger-2">
         <iframe
-          src="https://www.google.com/maps?q=Strawinskylaan+1,+1077+XX+Amsterdam+Zuid,+Netherlands&output=embed"
+          src="https://www.google.com/maps?q=Hogehilweg+22,+1101+CD+Amsterdam,+Netherlands&output=embed"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="J.Pzorg Netherlands office location map">
@@ -1498,6 +1498,7 @@
     function initKineticHeader() {
       const box = document.getElementById('kinetic-box');
       box.innerHTML = '';
+      wordIndex = 0;
       const list = currentLang === 'EN' ? wordsEN : wordsNL;
       list.forEach((w, i) => {
         const span = document.createElement('span');
@@ -1510,7 +1511,8 @@
     function rotateKineticHeader() {
       const spans = document.querySelectorAll('.kinetic-word');
       if (!spans.length) return;
-      spans[wordIndex].classList.remove('active');
+      if (wordIndex >= spans.length) wordIndex = 0;
+      spans.forEach(s => s.classList.remove('active'));
       spans[wordIndex].classList.add('exit');
       wordIndex = (wordIndex + 1) % spans.length;
       spans[wordIndex].classList.remove('exit');
@@ -1726,7 +1728,7 @@
         loc_title: "Visit Our Netherlands Office",
         loc_subtitle: "Drop by, call ahead, or find us on the map below.",
         loc_address_label: "Address",
-        loc_address: "Strawinskylaan 1, 1077 XX Amsterdam Zuid, Netherlands",
+        loc_address: "Hogehilweg 22, 1101 CD Amsterdam, Netherlands",
         loc_phone_label: "Phone",
         loc_hours_label: "Office Hours",
         loc_hours: "Mon–Fri, 9:00–18:00 CET",
@@ -1809,7 +1811,7 @@
         loc_title: "Bezoek Ons Kantoor in Nederland",
         loc_subtitle: "Kom langs, bel vooraf, of vind ons op de kaart hieronder.",
         loc_address_label: "Adres",
-        loc_address: "Strawinskylaan 1, 1077 XX Amsterdam Zuid, Nederland",
+        loc_address: "Hogehilweg 22, 1101 CD Amsterdam, Nederland",
         loc_phone_label: "Telefoon",
         loc_hours_label: "Openingstijden",
         loc_hours: "Ma–Vr, 9:00–18:00 CET",
